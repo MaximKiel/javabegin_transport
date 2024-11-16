@@ -1,11 +1,11 @@
-package javabegin.transport;
+package javabegin.transport.car;
 
-public class Toyota extends Car {
+public class BMW extends Car {
 
-    public Toyota() {
+    public BMW() {
     }
 
-    public Toyota(String name, String model, String color, int number) {
+    public BMW(String name, String model, String color, int number) {
         super(name, model, color, number);
     }
 

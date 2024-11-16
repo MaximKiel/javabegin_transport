@@ -1,4 +1,6 @@
-package javabegin.transport;
+package javabegin.transport.motorbike;
+
+import javabegin.transport.Transport;
 
 public class Motorbike extends Transport {
 

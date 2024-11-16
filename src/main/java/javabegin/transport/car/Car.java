@@ -1,4 +1,6 @@
-package javabegin.transport;
+package javabegin.transport.car;
+
+import javabegin.transport.Transport;
 
 public class Car extends Transport {
 

@@ -1,4 +1,4 @@
-package javabegin.transport;
+package javabegin.transport.motorbike;
 
 public class Kawasaki extends Motorbike {
 

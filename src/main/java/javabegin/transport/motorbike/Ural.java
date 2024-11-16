@@ -1,4 +1,4 @@
-package javabegin.transport;
+package javabegin.transport.motorbike;
 
 public class Ural extends Motorbike {
 
@@ -21,7 +21,8 @@ public class Ural extends Motorbike {
     }
 
     public void showInfo() {
-        System.out.println("Motorbike: " + super.getName() + ", " + super.getModel() +
-                ", volume: " + super.getVolume() + ", first aid kit: " + firstAidKit);
+        System.out.println("name=" + getName());
+        System.out.println("volume=" + getVolume());
+        System.out.println("aid=" + isFirstAidKit());
     }
 }

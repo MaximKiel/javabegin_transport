@@ -1,7 +1,7 @@
 package javabegin;
 
-import javabegin.transport.Kawasaki;
-import javabegin.transport.Ural;
+import javabegin.transport.motorbike.Kawasaki;
+import javabegin.transport.motorbike.Ural;
 
 public class Main {
 

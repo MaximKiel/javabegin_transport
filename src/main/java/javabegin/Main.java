@@ -1,20 +1,17 @@
 package javabegin;
 
-import javabegin.transport.BMW;
-import javabegin.transport.Toyota;
+import javabegin.transport.Kawasaki;
+import javabegin.transport.Ural;
 
 public class Main {
 
     public static void main(String[] args) {
-        BMW bmw = new BMW("BMW", "X5", "black", 1);
-        Toyota toyota = new Toyota("Toyota", "Camry", "white", 2);
-
-        bmw.drive();
-        bmw.stop();
+        Kawasaki kawasaki = new Kawasaki("Kawasaki", "K1", "green", 5.5, 2020);
+        kawasaki.jump();
 
         System.out.println();
 
-        toyota.drive();
-        toyota.stop();
+        Ural ural = new Ural("Ural", "U1", "brown", 3.5, true);
+        ural.showInfo();
     }
 }

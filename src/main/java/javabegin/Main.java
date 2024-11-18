@@ -1,17 +1,22 @@
 package javabegin;
 
+import javabegin.transport.Engine;
+import javabegin.transport.car.BMW;
+import javabegin.transport.car.Car;
+import javabegin.transport.car.Toyota;
 import javabegin.transport.motorbike.Kawasaki;
 import javabegin.transport.motorbike.Ural;
 
 public class Main {
 
     public static void main(String[] args) {
-        Kawasaki kawasaki = new Kawasaki("Kawasaki", "K1", "green", 5.5, 2020);
-        kawasaki.jump();
 
-        System.out.println();
+        Toyota toyota = new Toyota();
+        toyota.year = 2000;
+        System.out.println(toyota.year);
 
-        Ural ural = new Ural("Ural", "U1", "brown", 3.5, true);
-        ural.showInfo();
+
+        BMW bmw = new BMW();
+        System.out.println(bmw.year);
     }
 }

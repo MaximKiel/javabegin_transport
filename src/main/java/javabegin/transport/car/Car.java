@@ -1,10 +1,13 @@
 package javabegin.transport.car;
 
+import javabegin.transport.Engine;
 import javabegin.transport.Transport;
 
 public class Car extends Transport {
 
     private int number;
+
+    private Engine engine;
 
     public Car() {
     }
@@ -14,12 +17,25 @@ public class Car extends Transport {
         this.number = number;
     }
 
+    public Car(int number, Engine engine) {
+        this.number = number;
+        this.engine = engine;
+    }
+
     public int getNumber() {
         return number;
     }
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
     public void signal() {

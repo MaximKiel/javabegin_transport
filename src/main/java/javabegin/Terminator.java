@@ -1,8 +1,6 @@
 package javabegin;
 
-public class Terminator implements IRobot {
-
-    private String name;
+public class Terminator extends AbstractRobot {
 
     @Override
     public void move() {
@@ -17,14 +15,5 @@ public class Terminator implements IRobot {
     @Override
     public void flight() {
         System.out.println("Terminator flight");
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }

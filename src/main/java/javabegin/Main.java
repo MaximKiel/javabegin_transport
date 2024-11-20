@@ -9,7 +9,12 @@ public class Main {
         wing.open();
 
         Robocop robocop = new Robocop("Robo", wing);
+
+        robocop.on();
+
         robocop.flight();
         System.out.println(robocop.getName());
+
+        robocop.off();
     }
 }

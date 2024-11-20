@@ -5,8 +5,8 @@ public class Terminator extends AbstractRobot {
     public Terminator() {
     }
 
-    public Terminator(String name) {
-        super(name);
+    public Terminator(String name, IWing iWing) {
+        super(name, iWing);
     }
 
     @Override

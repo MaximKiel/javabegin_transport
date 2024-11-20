@@ -9,4 +9,5 @@ public interface IRobot {
     void flight();
 
     String getName();
+    IWing getIWing();
 }

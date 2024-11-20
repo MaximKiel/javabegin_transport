@@ -5,8 +5,8 @@ public class Robocop extends AbstractRobot {
     public Robocop() {
     }
 
-    public Robocop(String name) {
-        super(name);
+    public Robocop(String name, IWing iWing) {
+        super(name, iWing);
     }
 
     @Override
@@ -21,6 +21,11 @@ public class Robocop extends AbstractRobot {
 
     @Override
     public void flight() {
-        System.out.println("Robocop flight");
+        System.out.println("Robocop flight - " + getIWing().getSize());
+    }
+
+    @Override
+    public void on() {
+        System.out.println("on with beep");
     }
 }

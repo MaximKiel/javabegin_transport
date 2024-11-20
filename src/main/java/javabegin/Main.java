@@ -3,11 +3,13 @@ package javabegin;
 public class Main {
 
     public static void main(String[] args) {
-        Robocop robocop = new Robocop("Robo");
+
+        AircraftWing wing = new AircraftWing();
+        wing.setSize(10);
+        wing.open();
+
+        Robocop robocop = new Robocop("Robo", wing);
         robocop.flight();
         System.out.println(robocop.getName());
-
-        Terminator terminator = new Terminator();
-        terminator.move();
     }
 }

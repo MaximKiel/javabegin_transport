@@ -2,6 +2,13 @@ package javabegin;
 
 public class Robocop extends AbstractRobot {
 
+    public Robocop() {
+    }
+
+    public Robocop(String name) {
+        super(name);
+    }
+
     @Override
     public void move() {
         System.out.println("Robocop move");

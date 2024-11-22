@@ -1,12 +1,14 @@
 package javabegin;
 
-import javabegin.cartask.Car;
+import javabegin.computertask.Computer;
+import javabegin.computertask.Monitor;
 
 public class Main {
 
     public static void main(String[] args) {
-        Car car = new Car("Tesla");
-        car.drive();
-        car.stop();
+        Monitor monitor = new Monitor("Samsung");
+        Computer computer = new Computer("MacBook", monitor);
+        computer.on();
+        computer.off();
     }
 }

@@ -13,7 +13,7 @@ public class Car implements InterfaceCar{
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     public void setName(String name) {

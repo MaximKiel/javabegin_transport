@@ -1,4 +1,4 @@
-package javabegin;
+package javabegin.robot;
 
 public class Terminator extends AbstractRobot {
 

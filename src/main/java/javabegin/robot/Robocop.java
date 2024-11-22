@@ -1,4 +1,4 @@
-package javabegin;
+package javabegin.robot;
 
 public class Robocop extends AbstractRobot {
 

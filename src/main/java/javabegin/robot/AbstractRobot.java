@@ -1,4 +1,4 @@
-package javabegin;
+package javabegin.robot;
 
 public abstract class AbstractRobot implements IRobot, ITech {
 

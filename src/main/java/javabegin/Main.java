@@ -1,14 +1,14 @@
 package javabegin;
 
-import javabegin.computertask.Computer;
-import javabegin.computertask.Monitor;
+import javabegin.printertask.InterfacePrinter;
+import javabegin.printertask.Printer;
 
 public class Main {
 
     public static void main(String[] args) {
-        Monitor monitor = new Monitor("Samsung");
-        Computer computer = new Computer("MacBook", monitor);
-        computer.on();
-        computer.off();
+        InterfacePrinter printer = new Printer(10);
+        printer.print("Hello world");
+        printer.charge(5);
+        printer.print("Hello world");
     }
 }

@@ -19,19 +19,22 @@ public class Printer implements InterfacePrinter {
     @Override
     public void print(String massage) {
         int length = massage.length();
-        System.out.println("На печать отправлен текст: " + massage + ", длина: " + length);
+        String result = String.format("На печать отправлен текст: %s, длина: %d", massage, length);
+        System.out.println(result);
 
         if (length > paintVolume) {
-            System.out.println("Не хватило краски: " + (length - paintVolume) + " (всего краски в принтере " + paintVolume + ")");
+            result = String.format("Не хватило краски: %d (всего краски в принтере %d)", (length - paintVolume), paintVolume);
         } else {
             this.paintVolume -= length;
-            System.out.println("Текст распечатан: " + massage + ", у принтера осталось краски: " + paintVolume);
+            result = String.format("Текст распечатан: %s, у принтера осталось краски: %d", massage, paintVolume);
         }
+        System.out.println(result);
     }
 
     @Override
     public void charge(int value) {
         this.paintVolume += value;
-        System.out.println("Принтер пополнен на длину текста " + value + " (всего краски в принтере: " + paintVolume + ")");
+        String result = String.format("Принтер пополнен на длину текста %d (всего краски в принтере: %d)", value, paintVolume);
+        System.out.println(result);
     }
 }

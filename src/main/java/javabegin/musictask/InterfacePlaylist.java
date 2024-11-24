@@ -1,4 +1,4 @@
-package javabegin.music;
+package javabegin.musictask;
 
 import java.util.List;
 

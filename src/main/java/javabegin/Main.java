@@ -1,9 +1,9 @@
 package javabegin;
 
-import javabegin.music.Author;
-import javabegin.music.InterfacePlaylist;
-import javabegin.music.Playlist;
-import javabegin.music.Song;
+import javabegin.musictask.Author;
+import javabegin.musictask.InterfacePlaylist;
+import javabegin.musictask.Playlist;
+import javabegin.musictask.Song;
 
 import java.util.ArrayList;
 
